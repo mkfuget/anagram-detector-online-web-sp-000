@@ -17,13 +17,12 @@ class Anagram
         out[letter]+=1;
       end 
     end 
-    binding.pry
   end 
   
   def match(array)
     word_char_counts = Anagram.word_to_letter_counts_map(@word)
     out = []
-    puts word_char_counts["i"]
+    binding.pry
     array.each do |array_word|
       is_match = true
       array_word_char_counts = Anagram.word_to_letter_counts_map(array_word)
