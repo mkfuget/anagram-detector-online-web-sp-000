@@ -20,7 +20,7 @@ class Anagram
   def match(array)
     word_char_counts = Anagram.word_to_letter_counts_map(@word)
     out = []
-    puts word_char_counts
+    puts word_char_counts["i"]
     array.each do |array_word|
       is_match = true
       array_word_char_counts = Anagram.word_to_letter_counts_map(array_word)
