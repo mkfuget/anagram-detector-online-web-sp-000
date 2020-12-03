@@ -21,15 +21,21 @@ class Anagram
       array_word_char_counts = Anagram.word_to_letter_counts_map(array_word)
       word_char_counts.each |key, value|
         if(array_word_char_counts[key] != value)
-          match = false 
+          is_match? = false 
         end 
       end 
       
       if(array_word.length != @word.length)
-        match = false 
+        is_match? = false 
       end 
       
-      if(match)
+      if(is_match?)
+        out.push(array_word)
+      end 
+    end
+    return out 
+  end 
+end
       
       
       
