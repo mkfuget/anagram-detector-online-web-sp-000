@@ -17,19 +17,19 @@ class Anagram
     word_char_counts = Anagram.word_to_letter_counts_map(@word)
     out = []
     array.each do |array_word|
-      is_match? = true
+      is_match = true
       array_word_char_counts = Anagram.word_to_letter_counts_map(array_word)
       word_char_counts.each do |key, value|
         if(array_word_char_counts[key] != value)
-          is_match? = false 
+          is_match = false 
         end 
       end 
       
       if(array_word.length != @word.length)
-        is_match? = false 
+        is_match = false 
       end 
       
-      if(is_match?)
+      if(is_match)
         out.push(array_word)
       end 
     end
