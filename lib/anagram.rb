@@ -2,6 +2,10 @@
 class Anagram
   attr_accessor :word 
   
+  def initialize(word)
+    @word = word 
+  end
+  
   def self.word_to_letter_counts_map(word)
     out = {}
     word.split('').each do |letter|
