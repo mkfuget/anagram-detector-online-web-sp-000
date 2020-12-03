@@ -17,6 +17,7 @@ class Anagram
         out[letter]+=1;
       end 
     end 
+    return out
   end 
   
   def match(array)
